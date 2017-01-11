@@ -1,0 +1,250 @@
+
+/*
+ * Globals
+ */
+
+body {
+  /*font-family: Georgia, "Times New Roman", Times, serif;*/
+  color: #555;
+  font-family: 'Raleway', sans-serif;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  margin-top: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  color: #333;
+}
+
+
+/*
+ * Override Bootstrap's default container.
+ */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media only screen and (max-width: 1026px) {
+  #main-image {
+    display: none;
+  }
+}
+
+
+/*
+ * Masthead for nav
+ */
+
+.blog-masthead {
+  background-color: #428bca;
+  -webkit-box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+          box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+/* Nav links */
+.blog-nav-item {
+  position: relative;
+  display: inline-block;
+  padding: 10px;
+  font-weight: 500;
+  color: #cdddeb;
+  font-size: 14pt;
+}
+.blog-nav-item:hover,
+.blog-nav-item:focus {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Active state gets a caret at the bottom */
+.blog-nav .active {
+  color: #fff;
+}
+.blog-nav .active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -5px;
+  vertical-align: middle;
+  content: " ";
+  border-right: 5px solid transparent;
+  border-bottom: 5px solid;
+  border-left: 5px solid transparent;
+}
+
+
+/*
+ * Blog name and description
+ */
+
+.blog-header {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.blog-title {
+  margin-top: 30px;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: normal;
+}
+.blog-description {
+  font-size: 20px;
+  color: #999;
+}
+
+
+
+/* Sidebar modules for boxing content */
+.sidebar-module {
+  padding: 15px;
+  margin: 0 -15px 15px;
+}
+.sidebar-module-inset {
+  padding: 15px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+.sidebar-module-inset p:last-child,
+.sidebar-module-inset ul:last-child,
+.sidebar-module-inset ol:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Pagination */
+.pager {
+  margin-bottom: 60px;
+  text-align: left;
+}
+.pager > li > a {
+  width: 140px;
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+
+/*
+ * Blog posts
+ */
+
+.blog-post {
+  margin-bottom: 60px;
+}
+.blog-post-title {
+  margin-bottom: 5px;
+  font-size: 40px;
+}
+.blog-post-meta {
+  margin-bottom: 20px;
+  color: #999;
+}
+
+
+/*
+ * Footer
+ */
+
+.blog-footer {
+  padding: 40px 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
+/*
+ * Main Page
+ */
+.jumbotron {
+  background-color: #fff;
+  margin-top: 40px;
+  /*background-image: "static/assets/img/cat.jpg"*/
+  position: relative; 
+  width: 100%; /* for IE 6 */
+}
+
+ .imageContainer {
+       width:200px; 
+       height:200px; 
+       background-image: url('static/assets/img/hexagons_big.png');
+ }
+
+.title-page-text{
+  text-align: right;
+  font-family: 'Raleway', sans-serif;
+}
+
+.title-image {
+  margin-left: -60%;
+  margin-top: -35%;
+
+}
+
+.project-image {
+  width: 50%;
+}
+
+.main-section-title {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.section-header{
+  margin-top: 80px;
+}
+
+.contact-image {
+  width: 50%;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+.navbar-brand{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+.assistive-text {position: absolute;border: 0;-webkit-clip-path: rect(1px, 1px, 1px, 1px);clip-path: rect(1px, 1px, 1px, 1px);width: 1px;height: 1px;margin: -1px;padding: 0;overflow: hidden;}
+.vanish {display: none;visibility: hidden;}
+.responsive-line {display: inline;}
+.content-group {margin: 2rem auto;}
+.page-margin {width: 90%;}
+.bottom-absolute {position: absolute;bottom: 0px;}
+.box-shadow {box-shadow: 0 2px 2px #999;}
+
+.flex-container,.flex-row,
+.flex-row-col {display: -webkit-box;display: -ms-flexbox;display: flex;}
+.flex-row {-ms-flex-flow: row wrap;flex-flow: row wrap;margin: 5vh 5vw;}
+.flex-row-col {-ms-flex-flow: column;flex-flow: column;padding: .5vw;}
+.flex-field,.left-col,.text-col {-webkit-box-flex: 1;-ms-flex: auto;flex: auto;width: 200px;margin: 3vw;}
+.flex-image {width: 100%;height: auto;}.flex-header {-webkit-box-flex: 1;-ms-flex: 1 100%;flex: 1 100%;text-align: center;padding-bottom: 3vh;}
+.flex-jc-sb {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;}
+.justify-center {-webkit-box-pack: center;-ms-flex-pack: center;justify-content: center;}
+.flex-items-center {-webkit-box-align: center;-ms-flex-align: center;-ms-grid-row-align: center;align-items: center;}
+.align-items-baseline {-webkit-box-align: baseline;-ms-flex-align: baseline;-ms-grid-row-align: baseline;align-items: baseline;}
+.nav-items {-webkit-box-pack: justify;-ms-flex-pack: justify;justify-content: space-between;-webkit-box-align: center;-ms-flex-align: center;-ms-grid-row-align: center;align-items: center;}
+.ff-column {-ms-flex-flow: column;flex-flow: column;}
+.maxh-85vh {max-height: 85vh;}
+
+/*
+ * Custom CSS for Orwell
+ */
+
+.invisible {
+  display: none;
+}
+
